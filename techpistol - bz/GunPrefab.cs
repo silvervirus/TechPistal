@@ -35,8 +35,6 @@ namespace techpistol
 				gameObject.AgComponent<LargeWorldEntity>().cellLevel = LargeWorldEntity.CellLevel.Near;
 				gameObject.AgComponent<Pickupable>().isPickupable = true;
 				gameObject.AgComponent<TechTag>().type = base.TechType;
-				gameObject.AgComponent<Fixer>().techType = base.TechType;
-				gameObject.AgComponent<Fixer>().ClassId = base.ClassID;
 				WorldForces worldForces = gameObject.AgComponent<WorldForces>();
 				Rigidbody useRigidbody = gameObject.AgComponent<Rigidbody>();
 				worldForces.underwaterGravity = 0f;
